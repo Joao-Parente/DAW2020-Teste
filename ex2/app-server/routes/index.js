@@ -6,6 +6,11 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
 
+  res.cookie('anterior', req.url, {
+    expires: new Date(Date.now() + '1d'),
+    secure: false,
+    httpOnly: true
+  })
   res.render('index');
 });
 
