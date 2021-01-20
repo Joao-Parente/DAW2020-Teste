@@ -15,7 +15,7 @@ var token = undefined;
 
 
 console.log(">A obter o token...")
-axios.post('http://clav-api.di.uminho.pt/v2/users/login', { "username": "pri2020@teste.uminho.pt", "password": "123" })
+axios.post('http://clav-api.di.uminho.pt/v2/users/login', { "username": "daw2020@teste.uminho.pt", "password":"232" })
   .then(dados => {
     token = dados.data.token
     console.log(">Obtido com succeso o token!!")
